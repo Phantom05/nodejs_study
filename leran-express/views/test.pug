@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    style.
+      h1{
+        font-size:30px;
+      }
+  body
+    #login-button
+      .post-image
+
+    .hello
+      span#hightlight
+    p.hidden.full
+
+
+    p Wellcome to Express
+    button(type='submit') 전송
+
+    p
+     |안녕하세요.
+     |여러 줄을 입력합니다
+     br
+     |태그도 중간에 넣을 수 있습니다.
+     
+     h1= title
+     p Welcome to ${title}
+     button(class=title, type='submit') 전송
+     input(placeholder=title+ ' 연습')
+
+    - var node = 'Node.js'
+    - var js = 'Javascript'
+    p #{node}와 #{js}
+
+    p= '<strong>이스케이프</strong>'
+    p!= '<strong>이스케이ㅡ하지 않음</strong>'
+
+    ul
+      each fruit in ['사과','배','오렌지','바나나','복숭아']
+      li= fruit
+    
+  script.
+    var message = 'Pug';
+    console.log(message);
+
